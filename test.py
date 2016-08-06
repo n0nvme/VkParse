@@ -6,7 +6,7 @@ print(count)
 baneks = []
 for i in range(0, count, 100):
     print(i)
-    result = requests.get("https://api.vk.com/method/wall.get?v=5.53&owner_id=-45491419&offset="+str(i))
+    result = requests.get("https://api.vk.com/method/wall.get?v=5.53&count=100&owner_id=-45491419&offset="+str(i))
     for anek in result.json()['response']['items']:
         if anek['text'] != '':
             baneks.append(anek['text'])
