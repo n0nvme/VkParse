@@ -12,7 +12,7 @@ for i in range(0, count, 100):
             baneks.append(anek['text'])
 print(len(baneks))
 
-file = open('Anekdots.txt', 'w')
+file = open('AnekdotsClassB.txt', 'w')
 
 for i in range(len(baneks)):
 
